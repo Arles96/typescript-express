@@ -4,7 +4,10 @@
   "description": "Estructura de typescript con express",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf build",
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "start": "node ./build/index.js"
   },
   "repository": {
     "type": "git",

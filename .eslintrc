@@ -1,0 +1,25 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "semi": [2, "always"],
+    "object-shorthand": ["error", "consistent"],
+    "func-names": ["error", "as-needed"],
+    "no-alert": 0,
+    "no-underscore-dangle": [2, { "allow": ["__", "__helpers", "_id"] }],
+    "meteor/audit-argument-checks": 0,
+    "meteor/no-session": 0,
+    "no-else-return": 0,
+    "arrow-parens": ["error", "as-needed"],
+    "max-len": ["error", { "code": 140 }],
+    "prefer-promise-reject-errors": ["off"]
+  }
+}

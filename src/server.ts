@@ -40,7 +40,7 @@ class Server {
 
     app.use('*', (req, res) => {
       res.sendFile(path.join(__dirname, '../public/index.html'));
-    })
+    });
   }
 
   public start () : void {
@@ -54,4 +54,4 @@ class Server {
 
 export {
   Server
-}
+};

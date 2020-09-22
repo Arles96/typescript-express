@@ -27,9 +27,9 @@ class Server {
     app.use(morgan(keys.MORGAN_DEV));
     app.use(express.json());
     app.use(express.urlencoded({ extended: false }));
-    app.use(helmet());
-    app.use(compression());
-    app.use(cors());
+    // app.use(helmet());
+    // app.use(compression());
+    // app.use(cors());
     app.use(express.static(path.join(__dirname, 'public')));
   }
 
@@ -38,7 +38,9 @@ class Server {
     // rutas
     app.use('/api/example', exampleRoutes);
 
-    app.use('*')
+    app.use('*', (req, res) => {
+      res.sendFile(path.join(__dirname, '../public/index.html'));
+    })
   }
 
   public start () : void {

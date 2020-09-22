@@ -1,0 +1,23 @@
+{
+  "name": "typescript-express",
+  "version": "1.0.0",
+  "description": "Estructura de typescript con express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arles96/typescript-express.git"
+  },
+  "keywords": [
+    "Typescript",
+    "express"
+  ],
+  "author": "Arles Cerrato",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Arles96/typescript-express/issues"
+  },
+  "homepage": "https://github.com/Arles96/typescript-express#readme"
+}
